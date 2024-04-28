@@ -451,11 +451,11 @@ $WorkSans: "Work Sans", sans-serif;
 				@include fontStyle(1rem, "", "");
 			}
 			.custom-prev {
-				bottom: 1rem;
+				bottom: 0;
 				left: 10%;
 			}
 			.custom-next {
-				bottom: 0.5rem;
+				bottom: 0;
 				right: 10%;
 			}
 		}

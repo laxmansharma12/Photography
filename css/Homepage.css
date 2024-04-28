@@ -539,11 +539,11 @@
     line-height: "";
   }
   .Wrapper #HeroSection .custom-prev {
-    bottom: 1rem;
+    bottom: 0;
     left: 10%;
   }
   .Wrapper #HeroSection .custom-next {
-    bottom: 0.5rem;
+    bottom: 0;
     right: 10%;
   }
   .Wrapper .grid {
