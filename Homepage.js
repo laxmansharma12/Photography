@@ -34,6 +34,7 @@ function handleScroll() {
 	const navItem = document.querySelectorAll(".nav-link");
 	const brand = document.getElementById("navbar-brand");
 	const flex = document.getElementById("d-flex");
+	const portfolio = document.getElementById("port");
 
 	// Check if scroll percentage is greater than or equal to 10%
 	if (scrollPercentage >= 17) {
@@ -45,6 +46,7 @@ function handleScroll() {
 		brand.style.color = "#000";
 		lines.style.color = "#000";
 		cross.style.color = "#000";
+		portfolio.style.color = "#000";
 		flex.style.backgroundColor = "#fff";
 	} else {
 		navbar.style.backgroundColor = "";
@@ -55,6 +57,7 @@ function handleScroll() {
 		brand.style.color = "";
 		lines.style.color = "";
 		cross.style.color = "";
+		portfolio.style.color = "";
 		flex.style.backgroundColor = "";
 	}
 }

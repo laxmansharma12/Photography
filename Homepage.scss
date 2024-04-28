@@ -44,6 +44,14 @@ $WorkSans: "Work Sans", sans-serif;
 			text-decoration: underline;
 		}
 		z-index: 1000;
+		.dropdown {
+			@include flex(row, "", center, center);
+			.dropdown-toggle {
+				text-decoration: none;
+				padding: 0 8px;
+				color: #fff;
+			}
+		}
 	}
 	#HeroSection {
 		@include flex(row, 0, center, center);
@@ -733,6 +741,10 @@ $WorkSans: "Work Sans", sans-serif;
 					left: 0;
 					margin: 0;
 				}
+			}
+			.dropdown {
+				margin-left: -8px;
+				@include flex(column, "", center, start);
 			}
 		}
 		.slider {

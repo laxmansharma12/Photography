@@ -29,6 +29,18 @@
 .Wrapper #Navbar .navbar-nav .nav-link:hover {
   text-decoration: underline;
 }
+.Wrapper #Navbar .dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: "";
+}
+.Wrapper #Navbar .dropdown .dropdown-toggle {
+  text-decoration: none;
+  padding: 0 8px;
+  color: #fff;
+}
 .Wrapper #HeroSection {
   display: flex;
   justify-content: center;
@@ -899,6 +911,14 @@
     padding-left: 1rem;
     left: 0;
     margin: 0;
+  }
+  .Wrapper #Navbar .dropdown {
+    margin-left: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: "";
   }
   .Wrapper .slider {
     display: flex;
