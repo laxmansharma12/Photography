@@ -124,12 +124,23 @@ $WorkSans: "Work Sans", sans-serif;
 		}
 	}
 	.grid {
-		position: relative;
+		@include flex(column, 2rem, center, center);
 		.galleryHeading {
+			@include flex(row, 0, center, center);
+			margin-top: 3rem;
+			h1 {
+				@include fontStyle(4rem, 700, "");
+			}
 			p {
+				@include fontStyle(2rem, 500, "");
+				width: 55%;
+				font-style: oblique;
 				color: #5b5656;
+				text-align: center;
+				padding: 5rem 0 0 1rem;
 			}
 		}
+		position: relative;
 		.row {
 			width: 90%;
 			height: 90%;

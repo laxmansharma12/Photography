@@ -1,6 +1,4 @@
 let mybutton = document.getElementById("btn-back-to-top");
-let lines = document.getElementById("lines");
-let cross = document.getElementById("cross");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -64,16 +62,3 @@ function handleScroll() {
 // Event listener for the scroll event
 window.addEventListener("scroll", handleScroll);
 // -------------------------------------------------------------------------
-//nav togger functions
-
-lines.addEventListener("click", open);
-cross.addEventListener("click", close);
-
-function open() {
-	cross.style.display = "block";
-	lines.style.display = "none";
-}
-function close() {
-	cross.style.display = "none";
-	lines.style.display = "block";
-}

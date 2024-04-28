@@ -62,9 +62,8 @@
 									<li class="nav-item">
 										<a
 											class="nav-link active"
-											data-bs-toggle="collapse"
-											data-bs-target="#navbarSupportedContent"
 											aria-current="page"
+											aria-expanded="fasle"
 											href="#HeroSection"
 											>HOME</a
 										>
@@ -81,32 +80,15 @@
 										</a>
 										<ul class="dropdown-menu">
 											<li>
-												<a
-													class="dropdown-item"
-													data-bs-toggle="collapse"
-													data-bs-target="#navbarSupportedContent"
-													href="#grid"
-													>GALLERY</a
-												>
+												<a class="dropdown-item" href="#grid">GALLERY</a>
 											</li>
 											<li>
-												<a
-													class="dropdown-item"
-													data-bs-toggle="collapse"
-													data-bs-target="#navbarSupportedContent"
-													href="#slider"
-													>SLIDER</a
-												>
+												<a class="dropdown-item" href="#slider">SLIDER</a>
 											</li>
 										</ul>
 									</li>
 									<li class="nav-item">
-										<a
-											class="nav-link active"
-											data-bs-toggle="collapse"
-											data-bs-target="#navbarSupportedContent"
-											aria-current="page"
-											href="#about"
+										<a class="nav-link active" aria-current="page" href="#about"
 											>ABOUT</a
 										>
 									</li>
@@ -114,8 +96,6 @@
 										<a
 											class="nav-link active"
 											aria-current="page"
-											data-bs-toggle="collapse"
-											data-bs-target="#navbarSupportedContent"
 											href="#testimonials"
 											>TESTIMONIALS</a
 										>
@@ -124,8 +104,6 @@
 										<a
 											class="nav-link active"
 											aria-current="page"
-											data-bs-toggle="collapse"
-											data-bs-target="#navbarSupportedContent"
 											href="#contact"
 											>CONTACT</a
 										>
@@ -508,6 +486,103 @@
 				});
 				$(".custom-prev").click(function () {
 					owl.trigger("prev.owl.carousel");
+				});
+			});
+			// ------------------------------------------------
+			$(document).ready(function () {
+				// Function to handle collapsing navigation menu
+				function collapseNavbar() {
+					// Check if the navigation menu is collapsed
+					if ($("#navbarSupportedContent").hasClass("show")) {
+						// Collapse the navigation menu
+						$("#navbarSupportedContent").collapse("hide");
+					}
+				}
+
+				// Add click event listeners to the navigation links
+				$('.nav-link[href="#HeroSection"]').on("click", function () {
+					collapseNavbar();
+				});
+
+				$('.nav-link[href="#testimonials"]').on("click", function () {
+					collapseNavbar();
+				});
+				$('.dropdown-item[href="#grid"]').on("click", function () {
+					collapseNavbar();
+				});
+				$('.dropdown-item[href="#slider"]').on("click", function () {
+					collapseNavbar();
+				});
+
+				$('.nav-link[href="#contact"]').on("click", function () {
+					collapseNavbar();
+				});
+
+				$('.nav-link[href="#about"]').on("click", function () {
+					collapseNavbar();
+				});
+			});
+
+			// --------------------------------------------
+			$(document).ready(function () {
+				// Function to update the toggler icon based on navbar state and screen width
+				function updateTogglerIcon() {
+					var navbarCollapse = $("#navbarSupportedContent");
+					var screenWidth = $(window).width();
+
+					// Check if the screen width is greater than 850px and navigation menu is expanded or collapsed
+					if (screenWidth <= 850) {
+						if (navbarCollapse.hasClass("show")) {
+							// Navbar is expanded, show the "cross" icon and hide the "lines" icon
+							$("#cross").show();
+							$("#lines").hide();
+						} else {
+							// Navbar is collapsed, show the "lines" icon and hide the "cross" icon
+							$("#lines").show();
+							$("#cross").hide();
+						}
+					} else {
+						// Hide both icons when screen width is 850px or less
+						$("#lines").hide();
+						$("#cross").hide();
+					}
+				}
+
+				// Initial update based on navbar state and screen width
+				updateTogglerIcon();
+
+				// Toggle visibility of icons when toggler is clicked
+				$("#lines").on("click", function () {
+					$("#cross").show();
+					$(this).hide();
+				});
+
+				$("#cross").on("click", function () {
+					$("#lines").show();
+					$(this).hide();
+				});
+
+				// Update icon when navbar state changes (e.g., on collapse/expand)
+				$("#navbarSupportedContent").on("show.bs.collapse", function () {
+					updateTogglerIcon();
+				});
+
+				$("#navbarSupportedContent").on("hide.bs.collapse", function () {
+					updateTogglerIcon();
+				});
+
+				// Add event listener to update icons on window resize
+				$(window).resize(function () {
+					updateTogglerIcon();
+				});
+
+				// Add click event listeners to the navigation links
+				$(".nav-link").on("click", function () {
+					// Collapse the navigation menu on mobile devices
+					if ($(window).width() <= 850) {
+						$("#navbarSupportedContent").collapse("hide");
+						updateTogglerIcon();
+					}
 				});
 			});
 		</script>
