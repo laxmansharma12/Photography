@@ -161,7 +161,6 @@ $WorkSans: "Work Sans", sans-serif;
 		padding-top: 3rem;
 		position: relative;
 		height: fit-content;
-		display: none;
 		.sliderHeading {
 			@include flex(row, "", center, start);
 			h2 {
@@ -184,6 +183,12 @@ $WorkSans: "Work Sans", sans-serif;
 					width: 100%;
 					object-fit: cover;
 				}
+			}
+			.item1 {
+				width: 850px;
+			}
+			.item2 {
+				width: 350px;
 			}
 			.owl-nav .owl-prev {
 				height: 85%;
@@ -496,12 +501,58 @@ $WorkSans: "Work Sans", sans-serif;
 				justify-content: center;
 				width: 100%;
 				div {
-					width: 115px;
+					width: 33.3%;
 					padding: 7px;
 					img {
 						margin-bottom: 14px;
 					}
 				}
+			}
+		}
+		.slider {
+			@include flex(column, 0, center, center);
+			padding-top: 1rem;
+			.sliderHeading {
+				@include flex(column, 0, center, center);
+				width: 100%;
+				h2 {
+					@include fontStyle(2rem, 600, "");
+					text-align: center;
+				}
+				p {
+					@include fontStyle(1rem, 500, "");
+					width: 90%;
+					padding: 0;
+				}
+			}
+			.owl-carousel {
+				height: fit-content;
+				.item {
+					height: 430px;
+				}
+				.item1 {
+					width: 300px;
+				}
+				.item2 {
+					width: 300px;
+				}
+				.owl-nav .owl-prev {
+					width: 100px;
+				}
+				.owl-nav .owl-next {
+					width: 100px;
+				}
+				.owl-dot span {
+					margin-top: 0;
+				}
+			}
+			.custom-prev {
+				bottom: 0;
+				left: 20%;
+			}
+			.custom-next {
+				bottom: 0;
+				right: 20%;
 			}
 		}
 	}

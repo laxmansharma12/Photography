@@ -182,7 +182,6 @@
   padding-top: 3rem;
   position: relative;
   height: fit-content;
-  display: none;
 }
 .Wrapper .slider .sliderHeading {
   display: flex;
@@ -215,6 +214,12 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.Wrapper .slider .owl-carousel .item1 {
+  width: 850px;
+}
+.Wrapper .slider .owl-carousel .item2 {
+  width: 350px;
 }
 .Wrapper .slider .owl-carousel .owl-nav .owl-prev {
   height: 85%;
@@ -609,11 +614,69 @@
     width: 100%;
   }
   .Wrapper .grid .row div {
-    width: 115px;
+    width: 33.3%;
     padding: 7px;
   }
   .Wrapper .grid .row div img {
     margin-bottom: 14px;
+  }
+  .Wrapper .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 1rem;
+  }
+  .Wrapper .slider .sliderHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  .Wrapper .slider .sliderHeading h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: "";
+    text-align: center;
+  }
+  .Wrapper .slider .sliderHeading p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: "";
+    width: 90%;
+    padding: 0;
+  }
+  .Wrapper .slider .owl-carousel {
+    height: fit-content;
+  }
+  .Wrapper .slider .owl-carousel .item {
+    height: 430px;
+  }
+  .Wrapper .slider .owl-carousel .item1 {
+    width: 300px;
+  }
+  .Wrapper .slider .owl-carousel .item2 {
+    width: 300px;
+  }
+  .Wrapper .slider .owl-carousel .owl-nav .owl-prev {
+    width: 100px;
+  }
+  .Wrapper .slider .owl-carousel .owl-nav .owl-next {
+    width: 100px;
+  }
+  .Wrapper .slider .owl-carousel .owl-dot span {
+    margin-top: 0;
+  }
+  .Wrapper .slider .custom-prev {
+    bottom: 0;
+    left: 20%;
+  }
+  .Wrapper .slider .custom-next {
+    bottom: 0;
+    right: 20%;
   }
 }
 @media (min-width: 840px) {
