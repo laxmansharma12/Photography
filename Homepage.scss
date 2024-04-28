@@ -288,7 +288,6 @@ $WorkSans: "Work Sans", sans-serif;
 	#testimonials {
 		@include flex(column, 2rem, center, center);
 		height: 100vh;
-		display: none;
 		.testimonialHeading {
 			@include flex(row, "", center, center);
 			h2 {
@@ -573,6 +572,88 @@ $WorkSans: "Work Sans", sans-serif;
 				}
 			}
 		}
+		#testimonials {
+			.testimonialHeading {
+				@include flex(column, 0, center, center);
+				width: 100%;
+				margin-top: 4rem;
+				h2 {
+					@include fontStyle(2rem, 600, "");
+				}
+				p {
+					@include fontStyle(1rem, 500, "");
+					width: 90%;
+					padding: 0;
+					text-align: center;
+				}
+			}
+			.carousel {
+				width: 100%;
+				.carousel-inner {
+					.carousel-item {
+						@include flex(row, 2rem, center, center);
+						.testimonial {
+							@include flex(column, 0, center, center);
+							height: fit-content;
+							padding: 1rem;
+							position: relative;
+							.left {
+								@include flex(column, 1rem, start, center);
+								width: 100%;
+								height: fit-content;
+								margin-top: 1rem;
+								padding: 0;
+								order: 2;
+								h3 {
+									margin-top: 0;
+								}
+								p {
+									@include fontStyle(1rem, "", "");
+									width: 100%;
+									padding: 0;
+									text-align: center;
+								}
+							}
+							.right {
+								@include flex(row, 0, center, center);
+								width: 90%;
+								height: 300px;
+								order: 1;
+								img {
+									height: 100%;
+									width: 100%;
+									object-fit: cover;
+								}
+							}
+						}
+					}
+				}
+
+				.carousel-indicators {
+					button {
+						border: 1px solid transparent;
+						background: #3b4047;
+						border-radius: 50%;
+						height: 5px;
+						width: 5px;
+					}
+				}
+				.carousel-control-next,
+				.carousel-control-prev {
+					filter: invert(100%);
+				}
+				.carousel-control-prev {
+					span {
+						margin-right: 3rem;
+					}
+				}
+				.carousel-control-next {
+					span {
+						margin-left: 3rem;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -657,6 +738,27 @@ $WorkSans: "Work Sans", sans-serif;
 					}
 					button {
 						margin: 0;
+					}
+				}
+			}
+		}
+		#testimonials {
+			@include flex(column, 2rem, start, center);
+			height: fit-content;
+			.carousel {
+				.carousel-inner {
+					.carousel-item {
+						.left {
+							padding-top: 3rem;
+							h3 {
+								margin-top: 0;
+							}
+							p {
+								@include fontStyle(1rem, "", "");
+								width: 70%;
+								padding: 0;
+							}
+						}
 					}
 				}
 			}
