@@ -489,7 +489,6 @@
   align-items: center;
   flex-direction: row;
   gap: 0;
-  display: none;
 }
 .Wrapper .footer p {
   color: #fff;
@@ -817,6 +816,11 @@
   }
   .Wrapper #contact a {
     padding: 0.3rem 0.5rem;
+  }
+  .Wrapper .footer p {
+    font-size: 0.7rem;
+    font-weight: "";
+    line-height: "";
   }
 }
 @media (min-width: 840px) {

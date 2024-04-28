@@ -403,7 +403,6 @@ $WorkSans: "Work Sans", sans-serif;
 		background-color: #000;
 		height: 60px;
 		@include flex(row, 0, center, center);
-		display: none;
 		p {
 			color: #fff;
 			padding: 0;
@@ -671,6 +670,11 @@ $WorkSans: "Work Sans", sans-serif;
 			}
 			a {
 				padding: 0.3rem 0.5rem;
+			}
+		}
+		.footer {
+			p {
+				@include fontStyle(0.7rem, "", "");
 			}
 		}
 	}
