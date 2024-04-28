@@ -107,6 +107,7 @@ $WorkSans: "Work Sans", sans-serif;
 	}
 	.grid {
 		@include flex(column, 2rem, center, center);
+		display: none;
 		.galleryHeading {
 			@include flex(row, 0, center, center);
 			margin-top: 3rem;
@@ -142,6 +143,7 @@ $WorkSans: "Work Sans", sans-serif;
 		padding-top: 3rem;
 		position: relative;
 		height: fit-content;
+		display: none;
 		.sliderHeading {
 			@include flex(row, "", center, start);
 			h2 {
@@ -207,6 +209,7 @@ $WorkSans: "Work Sans", sans-serif;
 	#about {
 		@include flex(column, 0, center, center);
 		margin-top: 2rem;
+		display: none;
 		.aboutHeading {
 			@include flex(row, 0, center, center);
 			width: 90%;
@@ -283,6 +286,7 @@ $WorkSans: "Work Sans", sans-serif;
 	#testimonials {
 		@include flex(column, 2rem, center, center);
 		height: 100vh;
+		display: none;
 		.testimonialHeading {
 			@include flex(row, "", center, center);
 			h2 {
@@ -362,6 +366,7 @@ $WorkSans: "Work Sans", sans-serif;
 		@include flex(row, 0, center, center);
 		padding: 2rem;
 		position: relative;
+		display: none;
 		img {
 			height: 42rem;
 			width: 100%;
@@ -398,6 +403,7 @@ $WorkSans: "Work Sans", sans-serif;
 		background-color: #000;
 		height: 60px;
 		@include flex(row, 0, center, center);
+		display: none;
 		p {
 			color: #fff;
 			padding: 0;
@@ -411,5 +417,28 @@ $WorkSans: "Work Sans", sans-serif;
 		border-radius: 50%;
 		z-index: 50;
 		display: none;
+	}
+}
+
+@media (max-width: 840px) {
+	.Wrapper {
+		#Navbar {
+			padding: 0;
+			background-color: #b3b1b1;
+			.container-fluid {
+				@include flex(row, 0, space-between, start);
+				position: relative;
+				.d-flex {
+					@include flex(column, 1rem, center, start);
+					position: absolute;
+					background-color: #b3b1b1;
+					top: 50px;
+					width: 100%;
+					padding-left: 1rem;
+					left: 0;
+					margin: 0;
+				}
+			}
+		}
 	}
 }
