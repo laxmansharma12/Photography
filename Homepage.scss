@@ -367,7 +367,6 @@ $WorkSans: "Work Sans", sans-serif;
 		@include flex(row, 0, center, center);
 		padding: 2rem;
 		position: relative;
-		display: none;
 		img {
 			height: 42rem;
 			width: 100%;
@@ -654,6 +653,26 @@ $WorkSans: "Work Sans", sans-serif;
 				}
 			}
 		}
+		#contact {
+			padding: 0;
+			img {
+				height: 20rem;
+			}
+			.contactText {
+				@include flex(column, 0.5rem, center, center);
+				width: 80%;
+				text-align: center;
+				h1 {
+					@include fontStyle(1.5rem, 300, "");
+				}
+				p {
+					@include fontStyle(1rem, 300, "");
+				}
+			}
+			a {
+				padding: 0.3rem 0.5rem;
+			}
+		}
 	}
 }
 
@@ -761,6 +780,13 @@ $WorkSans: "Work Sans", sans-serif;
 						}
 					}
 				}
+			}
+		}
+		#contact {
+			.contactText {
+				@include flex(column, 1rem, center, center);
+				width: 80%;
+				text-align: center;
 			}
 		}
 	}
