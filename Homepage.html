@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Photography</title>
+		<link rel="stylesheet" href="./css/Homepage.css" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body id="root">
+		<div class="Wrapper">
+			<div id="Navbar">
+				<nav class="navbar navbar-expand-lg bg-transparent">
+					<div class="container-fluid">
+						<a class="navbar-brand" id="navbar-brand" href="#HeroSection"
+							>LaxmanSharma</a
+						>
+						<div class="d-flex">
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a
+											class="nav-link active"
+											aria-current="page"
+											href="#HeroSection"
+											>HOME</a
+										>
+									</li>
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link dropdown-toggle active"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											PORTFOLIO
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Another action</a>
+											</li>
+											<li><hr class="dropdown-divider" /></li>
+											<li>
+												<a class="dropdown-item" href="#"
+													>Something else here</a
+												>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="#about"
+											>ABOUT</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link active"
+											aria-current="page"
+											href="#testimonials"
+											>TESTIMONIALS</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link active"
+											aria-current="page"
+											href="#contact"
+											>CONTACT</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div id="HeroSection">
+				<div
+					id="carouselExampleFade"
+					class="carousel slide carousel-fade"
+					data-bs-ride="false"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleFade"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleFade"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="//images-pw.pixieset.com/sample_photos/theme_8_c5c72c66_XL.jpg"
+								alt="..."
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="//images-pw.pixieset.com/sample_photos/theme_8_41dce162_XL.jpg"
+								alt="..."
+							/>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleFade"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleFade"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+				<div class="text-wrapper">
+					<div class="heading">
+						<h1>
+							<span>Photography for Adventurous Souls</span> <span>&amp;</span>
+							<span>Rebels at Heart</span>
+						</h1>
+						<button type="button" class="btn btn-secondary">VIEW STORY</button>
+					</div>
+					<div class="subtitle">
+						<h4>
+							<span>Wedding</span>
+							<span>&amp;</span
+							><span> Elopement Photographer in Pacific Northwest, USA</span>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="grid">
+				<div class="galleryHeading">
+					<h1>Gallery,</h1>
+
+					<p>
+						where moments come alive through the lens of creativity and each
+						photograph is a story waiting to be told.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_21-c318e372.jpg"
+							class="w-100 shadow-1-strong rounded mb-4"
+							alt="Boat on Calm Water"
+						/>
+
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_6-9844eb47.jpg"
+							class="w-100 shadow-1-strong rounded mb-4"
+							alt="Wintry Mountain Landscape"
+						/>
+					</div>
+
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_4-6fa32eaa.jpg"
+							class="w-100 shadow-1-strong rounded mb-4"
+							alt="Boat on Calm Water"
+						/>
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_5-3981ad57.jpg"
+							class="w-100 shadow-1-strong rounded mb-4"
+						/>
+					</div>
+
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_21-c318e372.jpg"
+							class="w-100 shadow-1-strong rounded mb-4"
+							alt="Waves at Sea"
+						/>
+
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_4-6fa32eaa.jpg"
+							class="w-100 shadow-1-strong rounded mb-4"
+							alt="Yosemite National Park"
+						/>
+					</div>
+				</div>
+			</div>
+			<div class="slider">
+				<div class="sliderHeading">
+					<h2>Pacific Northwest to destinations beyond,</h2>
+					<p>
+						let's capture your love story amidst nature's grandeur. Your wedding
+						should be an adventure as extraordinary as your love. Together,
+						we'll craft timeless memories to share with future generations.
+					</p>
+				</div>
+				<div class="owl-carousel owl-theme">
+					<div class="item" style="width: 850px">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_5-3981ad57.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="item" style="width: 350px">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_6-9844eb47.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="item" style="width: 850px">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_21-c318e372.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="item" style="width: 350px">
+						<img
+							src="//images-pw.pixieset.com/elementfield/767036941/montreal_4-6fa32eaa.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<button class="custom-prev">
+					<i class="fa-solid fa-arrow-left"></i>
+				</button>
+				<button class="custom-next">
+					<i class="fa-solid fa-arrow-right"></i>
+				</button>
+			</div>
+			<div id="about">
+				<div class="aboutHeading">
+					<p>
+						<span
+							>"Sometimes you will never know the true value of a moment until
+							it becomes a memory."</span
+						>
+						<label>- Dr. Seuss</label>
+					</p>
+				</div>
+				<div class="aboutDetails">
+					<div class="left">
+						<img
+							src="https://scontent-sea1-1.cdninstagram.com/v/t51.29350-15/335928658_2272587699568365_2095160352415776652_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=1-PKlJlgkYQQ7kNvgGZ5zS1&_nc_ht=scontent-sea1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfAwwcb7EPIHycY-epo7Yc6ILg6uCctuDld6loWEh5dUyQ&oe=6632D24B"
+							alt=""
+						/>
+						<div class="border1"></div>
+						<label>Laxman Sharma</label>
+					</div>
+					<div class="right">
+						<h1>About Me</h1>
+						<p>
+							<span
+								>With a focus on capturing the intersection of natural beauty
+								and human emotion, this dedicated photographer based in the
+								captivating landscapes of the Pacific Northwest specializes in
+								wedding and elopement photography. Seeking out raw authenticity
+								and romantic allure, this photographer is committed to
+								storytelling through images that resonate with depth and
+								sentiment.</span
+							><br /><br /><span
+								>The photography style is characterized by a blend of artistry
+								and intuition, where every frame reflects the personalities and
+								emotions of the subjects. The approach is collaborative and
+								empathetic, allowing for authentic connections with couples and
+								families to create a comfortable and enjoyable experience.</span
+							>
+						</p>
+						<button class="btn btn-secondary">MORE ABOUT ME</button>
+					</div>
+				</div>
+			</div>
+			<div id="testimonials">
+				<div class="testimonialHeading">
+					<h2>Testimonial,</h2>
+					<p>Some of our happy customers.</p>
+				</div>
+
+				<div
+					id="carouselExampleFade1"
+					class="carousel slide carousel-fade"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleFade1"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleFade1"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleFade1"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="testimonial">
+								<div class="left">
+									<h3>Davis & Sylvia</h3>
+									<p>
+										"Where do I even start describing the unreal experience
+										we've had with Vanessa? She is mind-blowing in all aspects,
+										from the communication and all the resources and tips she
+										shared with us, to the amazing, fun experience we had on the
+										day of our elopement. Hire her without second-guessing it -
+										it will be your best decision and investment this far."
+									</p>
+								</div>
+								<div class="right">
+									<img
+										src="//images-pw.pixieset.com/sample_photos/theme_8_f81ae7f6_XS.jpg"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="testimonial">
+								<div class="left">
+									<h3>Mike & Susan</h3>
+									<p>
+										<span>
+											"Vanessa exceeded all our expectations! From the moment we
+											reached out to her about our dream elopement. We knew what
+											we wanted, but were completely lost on the logistics part.
+											She was there every step of the way, resources,
+											recommendations, you name it. The process up to our
+											wedding was such a breeze, and I still can’t get over how
+											gorgeous our photos are!"</span
+										>
+									</p>
+								</div>
+								<div class="right">
+									<img
+										src="//images-pw.pixieset.com/elementfield/542136941/montreal_28-c70c5252.jpg"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="testimonial">
+								<div class="left">
+									<h3>Jacky & Ryan</h3>
+									<p>
+										"Where do I even begin… Vanessa was there every step of the
+										way, from resources and vendor recommendations, to helping
+										us choose the locations for photos and the ceremony. Our
+										photos are absolutely stunning, and we couldn’t have wished
+										for a more amazing, knowledgeable, professional and fun
+										photographer!"
+									</p>
+								</div>
+								<div class="right">
+									<img
+										src="//images-pw.pixieset.com/sample_photos/theme_8_f067cc0d_XS.jpg"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleFade1"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleFade1"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+			<div id="contact">
+				<img src="./images/tim-bogdanov-4uojMEdcwI8-unsplash.jpg" />
+				<div class="contactText">
+					<h1>See your world through a fresh perspective.</h1>
+					<p>
+						Ready to embark on your next adventure captured through my lens?
+					</p>
+					<a href="#">CONTACT ME</a>
+				</div>
+			</div>
+			<div class="footer">
+				<p>&copy;Copyright. All rights reserved</p>
+			</div>
+			<button
+				type="button"
+				class="btn btn-danger btn-floating btn-lg"
+				id="btn-back-to-top"
+			>
+				<i class="fas fa-arrow-up"></i>
+			</button>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
+		<script src="./Homepage.js"></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				var owl = $(".owl-carousel");
+				owl.owlCarousel({
+					margin: 20,
+					center: true,
+					loop: true,
+					nav: true,
+					autoWidth: true,
+					items: 1,
+				});
+
+				// Custom navigation events
+				$(".custom-next").click(function () {
+					owl.trigger("next.owl.carousel");
+				});
+				$(".custom-prev").click(function () {
+					owl.trigger("prev.owl.carousel");
+				});
+			});
+		</script>
+	</body>
+</html>

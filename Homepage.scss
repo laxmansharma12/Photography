@@ -1,0 +1,415 @@
+@mixin flex($direction, $gap, $justifyContent, $alignItems) {
+	display: flex;
+	justify-content: $justifyContent;
+	align-items: $alignItems;
+	flex-direction: $direction;
+	gap: $gap;
+}
+
+@mixin fontStyle($fontSize, $fontWeight, $lineHeight) {
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	line-height: $lineHeight;
+}
+
+$VollSerif: "Vollkorn", serif;
+$WorkSans: "Work Sans", sans-serif;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.Wrapper {
+	label,
+	h1,
+	h1,
+	h2,
+	p {
+		cursor: default;
+	}
+	#Navbar {
+		position: absolute;
+		width: 100%;
+		padding: 0 4rem;
+		.navbar-nav .nav-link,
+		.navbar-brand {
+			color: #fff; /* Set the text color to white */
+		}
+		.navbar-brand {
+			@include fontStyle(1.6rem, 700, "");
+			font-family: VollSerif;
+		}
+		.navbar-nav .nav-link:hover {
+			text-decoration: underline;
+		}
+		z-index: 1000;
+	}
+	#HeroSection {
+		@include flex(row, 0, center, center);
+		width: 100%;
+		height: 100vh;
+		.carousel {
+			height: 100%;
+			width: 100%;
+			.carousel-inner {
+				height: 100%;
+				.carousel-item {
+					height: 100%;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						filter: brightness(0.8);
+					}
+				}
+			}
+			.carousel-control-prev,
+			.carousel-control-next {
+				z-index: 2;
+				width: 40%;
+				opacity: 0;
+			}
+		}
+
+		.text-wrapper {
+			@include flex(row, 0, center, center);
+			height: 80%;
+			width: 90%;
+			position: absolute;
+			z-index: 1;
+			.heading {
+				@include flex(column, 1rem, center, start);
+				width: 60%;
+				h1 {
+					@include fontStyle(5rem, 500, 1.1em);
+					color: #fff;
+					font-family: VollSerif;
+				}
+				button {
+					@include fontStyle(0.9rem, 700, "");
+					padding: 0.5rem 2rem;
+				}
+			}
+			.subtitle {
+				@include flex(row, 0, end, end);
+				width: 50%;
+				height: 100%;
+				h4 {
+					@include fontStyle(0.6rem, 400, 1.93em);
+					letter-spacing: 0.1rem;
+					color: #fff;
+					width: 50%;
+					font-family: "Courier Prime", monospace;
+				}
+			}
+		}
+	}
+	.grid {
+		@include flex(column, 2rem, center, center);
+		.galleryHeading {
+			@include flex(row, 0, center, center);
+			margin-top: 3rem;
+			h1 {
+				@include fontStyle(4rem, 700, "");
+			}
+			p {
+				@include fontStyle(2rem, 500, "");
+				width: 55%;
+				font-style: oblique;
+				text-align: center;
+				padding: 5rem 0 0 1rem;
+			}
+		}
+		position: relative;
+		.row {
+			width: 90%;
+			height: 90%;
+			div {
+				img {
+					transition: all 0.4s ease-in-out !important;
+				}
+				img:hover {
+					transform: scale(1.03);
+					transition: all 0.5s ease-in-out;
+					filter: brightness(1);
+				}
+			}
+		}
+	}
+	.slider {
+		@include flex(column, 2rem, start, center);
+		padding-top: 3rem;
+		position: relative;
+		height: fit-content;
+		.sliderHeading {
+			@include flex(row, "", center, start);
+			h2 {
+				@include fontStyle(2rem, 700, "");
+			}
+			p {
+				@include fontStyle(1.5rem, 500, "");
+				width: 40%;
+				font-style: oblique;
+				text-align: center;
+				padding: 1rem 0 0 1rem;
+			}
+		}
+		.owl-carousel {
+			height: 600px;
+			.item {
+				height: 500px;
+				img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+			.owl-nav .owl-prev {
+				height: 85%;
+				width: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+			}
+			.owl-nav .owl-next {
+				height: 85%;
+				width: 200px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				opacity: 0;
+			}
+			.owl-dot span {
+				height: 5px;
+				width: 5px;
+				margin-top: 2rem;
+			}
+		}
+		button.custom-prev,
+		button.custom-next {
+			background: transparent;
+			border: none;
+			position: absolute;
+			outline: none;
+			z-index: 2;
+		}
+		.custom-prev {
+			bottom: 2.7rem;
+			left: 45%;
+		}
+		.custom-next {
+			bottom: 2.7rem;
+			right: 45%;
+		}
+	}
+	#about {
+		@include flex(column, 0, center, center);
+		margin-top: 2rem;
+		.aboutHeading {
+			@include flex(row, 0, center, center);
+			width: 90%;
+			h1 {
+				@include fontStyle(5rem, 500, "");
+				width: 30%;
+				text-align: right;
+			}
+			p {
+				@include flex(column, 1rem, center, center);
+				@include fontStyle(2rem, 400, "");
+				width: 60%;
+				text-align: center;
+				font-style: oblique;
+				label {
+					@include fontStyle(1rem, 500, "");
+					font-style: normal;
+					margin-right: 20%;
+					align-self: end;
+				}
+			}
+		}
+		.aboutDetails {
+			@include flex(row, 0, space-between, center);
+			width: 90%;
+			height: 600px;
+			.left {
+				@include flex(row, 0, center, center);
+				width: 50%;
+				height: 100%;
+				position: relative;
+				img {
+					height: 350px;
+					width: 300px;
+					margin-top: -5rem;
+				}
+				.border1 {
+					position: absolute;
+					height: 460px;
+					width: 335px;
+					border: 3px solid #000;
+				}
+				label {
+					@include fontStyle(2.5rem, 500, "");
+					position: absolute;
+					bottom: 16%;
+					width: 350px;
+					text-align: center;
+					background: #fff;
+				}
+			}
+			.right {
+				@include flex(column, 1rem, center, start);
+				width: 50%;
+				height: 100%;
+				padding: 1rem;
+				h1 {
+					@include fontStyle(3rem, 500, "");
+					border-bottom: 3px solid #000;
+				}
+				p {
+					@include fontStyle(1.3rem, "", "");
+					color: #5b5656;
+					font-family: WorkSans;
+				}
+				button {
+					padding: 0.5rem 2rem;
+					border: none;
+					outline: none;
+				}
+			}
+		}
+	}
+	#testimonials {
+		@include flex(column, 2rem, center, center);
+		height: 100vh;
+		.testimonialHeading {
+			@include flex(row, "", center, center);
+			h2 {
+				@include fontStyle(2rem, 700, "");
+			}
+			p {
+				@include fontStyle(1.5rem, 500, "");
+				font-style: oblique;
+				padding: 3rem 0 0 1rem;
+			}
+		}
+		.carousel {
+			.carousel-inner {
+				.carousel-item {
+					@include flex(row, 2rem, center, center);
+					.testimonial {
+						@include flex(row, 0, center, center);
+						height: 500px;
+						width: 90%;
+						background-color: rgb(247, 249, 251);
+						padding: 1rem 3rem;
+						.left {
+							@include flex(column, 1rem, center, start);
+							width: 70%;
+							height: 100%;
+							margin: auto;
+							h3 {
+								margin-top: -10rem;
+							}
+							p {
+								@include fontStyle(1.1rem, "", "");
+								font-style: oblique;
+								letter-spacing: 0.2px;
+								color: #3f3c3c;
+							}
+						}
+						.right {
+							@include flex(row, 0, end, center);
+							height: 100%;
+							width: 30%;
+							img {
+								height: 90%;
+								width: 300px;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+
+			.carousel-indicators {
+				button {
+					border: 1px solid transparent;
+					background: #3b4047;
+					border-radius: 50%;
+					height: 5px;
+					width: 5px;
+				}
+			}
+			.carousel-control-next,
+			.carousel-control-prev {
+				filter: invert(100%);
+			}
+			.carousel-control-prev {
+				span {
+					margin-right: 3rem;
+				}
+			}
+			.carousel-control-next {
+				span {
+					margin-left: 3rem;
+				}
+			}
+		}
+	}
+	#contact {
+		@include flex(row, 0, center, center);
+		padding: 2rem;
+		position: relative;
+		img {
+			height: 42rem;
+			width: 100%;
+			object-fit: cover;
+			filter: brightness(0.5);
+		}
+		.contactText {
+			@include flex(column, 2rem, center, center);
+			position: absolute;
+			h1 {
+				@include fontStyle(4rem, 300, "");
+				color: #fff;
+			}
+			p {
+				@include fontStyle(2rem, 300, "");
+				color: #fff;
+			}
+		}
+		a {
+			padding: 0.5rem 1rem;
+			color: #fff;
+			text-decoration: none;
+			border: 1px solid #fff;
+			top: 90%;
+			left: 90%;
+		}
+		a:hover {
+			background-color: #e1d9d9;
+			color: #000;
+			text-decoration: none;
+		}
+	}
+	.footer {
+		background-color: #000;
+		height: 60px;
+		@include flex(row, 0, center, center);
+		p {
+			color: #fff;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	#btn-back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		border-radius: 50%;
+		z-index: 50;
+		display: none;
+	}
+}

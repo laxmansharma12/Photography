@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Wrapper label,
+.Wrapper h1,
+.Wrapper h1,
+.Wrapper h2,
+.Wrapper p {
+  cursor: default;
+}
+.Wrapper #Navbar {
+  position: absolute;
+  width: 100%;
+  padding: 0 4rem;
+  z-index: 1000;
+}
+.Wrapper #Navbar .navbar-nav .nav-link,
+.Wrapper #Navbar .navbar-brand {
+  color: #fff; /* Set the text color to white */
+}
+.Wrapper #Navbar .navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: "";
+  font-family: VollSerif;
+}
+.Wrapper #Navbar .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+.Wrapper #HeroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  width: 100%;
+  height: 100vh;
+}
+.Wrapper #HeroSection .carousel {
+  height: 100%;
+  width: 100%;
+}
+.Wrapper #HeroSection .carousel .carousel-inner {
+  height: 100%;
+}
+.Wrapper #HeroSection .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+.Wrapper #HeroSection .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+.Wrapper #HeroSection .carousel .carousel-control-prev,
+.Wrapper #HeroSection .carousel .carousel-control-next {
+  z-index: 2;
+  width: 40%;
+  opacity: 0;
+}
+.Wrapper #HeroSection .text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  height: 80%;
+  width: 90%;
+  position: absolute;
+  z-index: 1;
+}
+.Wrapper #HeroSection .text-wrapper .heading {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 60%;
+}
+.Wrapper #HeroSection .text-wrapper .heading h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1.1em;
+  color: #fff;
+  font-family: VollSerif;
+}
+.Wrapper #HeroSection .text-wrapper .heading button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: "";
+  padding: 0.5rem 2rem;
+}
+.Wrapper #HeroSection .text-wrapper .subtitle {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row;
+  gap: 0;
+  width: 50%;
+  height: 100%;
+}
+.Wrapper #HeroSection .text-wrapper .subtitle h4 {
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 1.93em;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  width: 50%;
+  font-family: "Courier Prime", monospace;
+}
+.Wrapper .grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.Wrapper .grid .galleryHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  margin-top: 3rem;
+}
+.Wrapper .grid .galleryHeading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: "";
+}
+.Wrapper .grid .galleryHeading p {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: "";
+  width: 55%;
+  font-style: oblique;
+  text-align: center;
+  padding: 5rem 0 0 1rem;
+}
+.Wrapper .grid .row {
+  width: 90%;
+  height: 90%;
+}
+.Wrapper .grid .row div img {
+  transition: all 0.4s ease-in-out !important;
+}
+.Wrapper .grid .row div img:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease-in-out;
+  filter: brightness(1);
+}
+.Wrapper .slider {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  height: fit-content;
+}
+.Wrapper .slider .sliderHeading {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: "";
+}
+.Wrapper .slider .sliderHeading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: "";
+}
+.Wrapper .slider .sliderHeading p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: "";
+  width: 40%;
+  font-style: oblique;
+  text-align: center;
+  padding: 1rem 0 0 1rem;
+}
+.Wrapper .slider .owl-carousel {
+  height: 600px;
+}
+.Wrapper .slider .owl-carousel .item {
+  height: 500px;
+}
+.Wrapper .slider .owl-carousel .item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.Wrapper .slider .owl-carousel .owl-nav .owl-prev {
+  height: 85%;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.Wrapper .slider .owl-carousel .owl-nav .owl-next {
+  height: 85%;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+.Wrapper .slider .owl-carousel .owl-dot span {
+  height: 5px;
+  width: 5px;
+  margin-top: 2rem;
+}
+.Wrapper .slider button.custom-prev,
+.Wrapper .slider button.custom-next {
+  background: transparent;
+  border: none;
+  position: absolute;
+  outline: none;
+  z-index: 2;
+}
+.Wrapper .slider .custom-prev {
+  bottom: 2.7rem;
+  left: 45%;
+}
+.Wrapper .slider .custom-next {
+  bottom: 2.7rem;
+  right: 45%;
+}
+.Wrapper #about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+}
+.Wrapper #about .aboutHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  width: 90%;
+}
+.Wrapper #about .aboutHeading h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: "";
+  width: 30%;
+  text-align: right;
+}
+.Wrapper #about .aboutHeading p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: "";
+  width: 60%;
+  text-align: center;
+  font-style: oblique;
+}
+.Wrapper #about .aboutHeading p label {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: "";
+  font-style: normal;
+  margin-right: 20%;
+  align-self: end;
+}
+.Wrapper #about .aboutDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  width: 90%;
+  height: 600px;
+}
+.Wrapper #about .aboutDetails .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.Wrapper #about .aboutDetails .left img {
+  height: 350px;
+  width: 300px;
+  margin-top: -5rem;
+}
+.Wrapper #about .aboutDetails .left .border1 {
+  position: absolute;
+  height: 460px;
+  width: 335px;
+  border: 3px solid #000;
+}
+.Wrapper #about .aboutDetails .left label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: "";
+  position: absolute;
+  bottom: 16%;
+  width: 350px;
+  text-align: center;
+  background: #fff;
+}
+.Wrapper #about .aboutDetails .right {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+}
+.Wrapper #about .aboutDetails .right h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: "";
+  border-bottom: 3px solid #000;
+}
+.Wrapper #about .aboutDetails .right p {
+  font-size: 1.3rem;
+  font-weight: "";
+  line-height: "";
+  color: #5b5656;
+  font-family: WorkSans;
+}
+.Wrapper #about .aboutDetails .right button {
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+}
+.Wrapper #testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+}
+.Wrapper #testimonials .testimonialHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: "";
+}
+.Wrapper #testimonials .testimonialHeading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: "";
+}
+.Wrapper #testimonials .testimonialHeading p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: "";
+  font-style: oblique;
+  padding: 3rem 0 0 1rem;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item .testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  height: 500px;
+  width: 90%;
+  background-color: rgb(247, 249, 251);
+  padding: 1rem 3rem;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item .testimonial .left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item .testimonial .left h3 {
+  margin-top: -10rem;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item .testimonial .left p {
+  font-size: 1.1rem;
+  font-weight: "";
+  line-height: "";
+  font-style: oblique;
+  letter-spacing: 0.2px;
+  color: #3f3c3c;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item .testimonial .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  height: 100%;
+  width: 30%;
+}
+.Wrapper #testimonials .carousel .carousel-inner .carousel-item .testimonial .right img {
+  height: 90%;
+  width: 300px;
+  object-fit: cover;
+}
+.Wrapper #testimonials .carousel .carousel-indicators button {
+  border: 1px solid transparent;
+  background: #3b4047;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+}
+.Wrapper #testimonials .carousel .carousel-control-next,
+.Wrapper #testimonials .carousel .carousel-control-prev {
+  filter: invert(100%);
+}
+.Wrapper #testimonials .carousel .carousel-control-prev span {
+  margin-right: 3rem;
+}
+.Wrapper #testimonials .carousel .carousel-control-next span {
+  margin-left: 3rem;
+}
+.Wrapper #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding: 2rem;
+  position: relative;
+}
+.Wrapper #contact img {
+  height: 42rem;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.Wrapper #contact .contactText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+}
+.Wrapper #contact .contactText h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: "";
+  color: #fff;
+}
+.Wrapper #contact .contactText p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: "";
+  color: #fff;
+}
+.Wrapper #contact a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  top: 90%;
+  left: 90%;
+}
+.Wrapper #contact a:hover {
+  background-color: #e1d9d9;
+  color: #000;
+  text-decoration: none;
+}
+.Wrapper .footer {
+  background-color: #000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.Wrapper .footer p {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.Wrapper #btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  z-index: 50;
+  display: none;
+}
