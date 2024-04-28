@@ -1,4 +1,6 @@
 let mybutton = document.getElementById("btn-back-to-top");
+let lines = document.getElementById("lines");
+let cross = document.getElementById("cross");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -33,6 +35,7 @@ function handleScroll() {
 	const navbar = document.getElementById("Navbar");
 	const navItem = document.querySelectorAll(".nav-link");
 	const brand = document.getElementById("navbar-brand");
+	const flex = document.getElementById("d-flex");
 
 	// Check if scroll percentage is greater than or equal to 10%
 	if (scrollPercentage >= 17) {
@@ -42,6 +45,9 @@ function handleScroll() {
 			link.style.color = "#000";
 		});
 		brand.style.color = "#000";
+		lines.style.color = "#000";
+		cross.style.color = "#000";
+		flex.style.backgroundColor = "#fff";
 	} else {
 		navbar.style.backgroundColor = "";
 		navbar.style.position = "";
@@ -49,6 +55,9 @@ function handleScroll() {
 			link.style.color = "";
 		});
 		brand.style.color = "";
+		lines.style.color = "";
+		cross.style.color = "";
+		flex.style.backgroundColor = "";
 	}
 }
 
@@ -56,8 +65,6 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 // -------------------------------------------------------------------------
 //nav togger functions
-let lines = document.getElementById("lines");
-let cross = document.getElementById("cross");
 
 lines.addEventListener("click", open);
 cross.addEventListener("click", close);
