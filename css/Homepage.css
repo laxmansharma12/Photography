@@ -524,7 +524,7 @@
   }
   .Wrapper #HeroSection .text-wrapper .heading h1 {
     font-size: 3.5rem;
-    font-weight: 500;
+    font-weight: "";
     line-height: 1.1em;
   }
   .Wrapper #HeroSection .text-wrapper .subtitle h4 {
