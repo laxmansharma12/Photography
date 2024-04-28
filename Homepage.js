@@ -55,3 +55,18 @@ function handleScroll() {
 // Event listener for the scroll event
 window.addEventListener("scroll", handleScroll);
 // -------------------------------------------------------------------------
+//nav togger functions
+let lines = document.getElementById("lines");
+let cross = document.getElementById("cross");
+
+lines.addEventListener("click", open);
+cross.addEventListener("click", close);
+
+function open() {
+	cross.style.display = "block";
+	lines.style.display = "none";
+}
+function close() {
+	cross.style.display = "none";
+	lines.style.display = "block";
+}

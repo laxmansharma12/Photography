@@ -57,7 +57,7 @@
 .Wrapper #HeroSection .carousel .carousel-control-prev,
 .Wrapper #HeroSection .carousel .carousel-control-next {
   z-index: 2;
-  width: 40%;
+  width: 30%;
   opacity: 0;
 }
 .Wrapper #HeroSection .text-wrapper {
@@ -109,6 +109,26 @@
   color: #fff;
   width: 50%;
   font-family: "Courier Prime", monospace;
+}
+.Wrapper #HeroSection .custom-prev,
+.Wrapper #HeroSection .custom-next {
+  font-size: 1.5rem;
+  font-weight: "";
+  line-height: "";
+  position: absolute;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.Wrapper #HeroSection .custom-prev {
+  bottom: 0.5rem;
+  left: 40%;
+}
+.Wrapper #HeroSection .custom-next {
+  bottom: 0.5rem;
+  right: 40%;
 }
 .Wrapper .grid {
   display: flex;
@@ -530,6 +550,18 @@
     gap: 0;
     position: relative;
   }
+  .Wrapper #Navbar .container-fluid #cross,
+  .Wrapper #Navbar .container-fluid #lines {
+    font-size: 1.4rem;
+    font-weight: "";
+    line-height: "";
+    padding: 1rem 0.5rem 0 0;
+    border: none;
+    color: #fff;
+  }
+  .Wrapper #Navbar .container-fluid #cross {
+    display: none;
+  }
   .Wrapper #Navbar .container-fluid .d-flex {
     display: flex;
     justify-content: center;
@@ -543,5 +575,43 @@
     padding-left: 1rem;
     left: 0;
     margin: 0;
+  }
+  .Wrapper #HeroSection .carousel .carousel-control-prev,
+  .Wrapper #HeroSection .carousel .carousel-control-next {
+    width: 20%;
+  }
+  .Wrapper #HeroSection .text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 0;
+  }
+  .Wrapper #HeroSection .text-wrapper .heading {
+    margin-top: 2rem;
+  }
+  .Wrapper #HeroSection .text-wrapper .heading h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.1em;
+  }
+  .Wrapper #HeroSection .text-wrapper .subtitle h4 {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+  }
+  .Wrapper #HeroSection .custom-prev,
+  .Wrapper #HeroSection .custom-next {
+    font-size: 1rem;
+    font-weight: "";
+    line-height: "";
+  }
+  .Wrapper #HeroSection .custom-prev {
+    bottom: 1rem;
+    left: 10%;
+  }
+  .Wrapper #HeroSection .custom-next {
+    bottom: 1rem;
+    right: 10%;
   }
 }

@@ -42,23 +42,28 @@
 						<a class="navbar-brand" id="navbar-brand" href="#HeroSection"
 							>LaxmanSharma</a
 						>
-						<button
-							class="navbar-toggler"
-							type="button"
+
+						<i
+							id="lines"
+							class="fa-solid fa-bars"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<span class="navbar-toggler-icon"></span>
-						</button>
+						></i>
+						<i
+							id="cross"
+							class="fa-solid fa-xmark"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+						></i>
+
 						<div class="d-flex">
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 									<li class="nav-item">
 										<a
 											class="nav-link active"
+											data-bs-toggle="collapse"
+											data-bs-target="#navbarSupportedContent"
 											aria-current="page"
 											href="#HeroSection"
 											>HOME</a
@@ -75,20 +80,33 @@
 											PORTFOLIO
 										</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="#">Action</a></li>
 											<li>
-												<a class="dropdown-item" href="#">Another action</a>
+												<a
+													class="dropdown-item"
+													data-bs-toggle="collapse"
+													data-bs-target="#navbarSupportedContent"
+													href="#"
+													>Action</a
+												>
 											</li>
-											<li><hr class="dropdown-divider" /></li>
 											<li>
-												<a class="dropdown-item" href="#"
-													>Something else here</a
+												<a
+													class="dropdown-item"
+													data-bs-toggle="collapse"
+													data-bs-target="#navbarSupportedContent"
+													href="#"
+													>Another action</a
 												>
 											</li>
 										</ul>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link active" aria-current="page" href="#about"
+										<a
+											class="nav-link active"
+											data-bs-toggle="collapse"
+											data-bs-target="#navbarSupportedContent"
+											aria-current="page"
+											href="#about"
 											>ABOUT</a
 										>
 									</li>
@@ -96,6 +114,8 @@
 										<a
 											class="nav-link active"
 											aria-current="page"
+											data-bs-toggle="collapse"
+											data-bs-target="#navbarSupportedContent"
 											href="#testimonials"
 											>TESTIMONIALS</a
 										>
@@ -104,6 +124,8 @@
 										<a
 											class="nav-link active"
 											aria-current="page"
+											data-bs-toggle="collapse"
+											data-bs-target="#navbarSupportedContent"
 											href="#contact"
 											>CONTACT</a
 										>
@@ -180,6 +202,20 @@
 						</h4>
 					</div>
 				</div>
+				<button
+					class="custom-prev"
+					data-bs-target="#carouselExampleFade"
+					data-bs-slide="prev"
+				>
+					<i class="fa-solid fa-arrow-left"></i>
+				</button>
+				<button
+					class="custom-next"
+					data-bs-target="#carouselExampleFade"
+					data-bs-slide="next"
+				>
+					<i class="fa-solid fa-arrow-right"></i>
+				</button>
 			</div>
 			<div class="grid">
 				<div class="galleryHeading">
