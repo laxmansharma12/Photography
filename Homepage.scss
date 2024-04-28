@@ -124,21 +124,6 @@ $WorkSans: "Work Sans", sans-serif;
 		}
 	}
 	.grid {
-		@include flex(column, 2rem, center, center);
-		.galleryHeading {
-			@include flex(row, 0, center, center);
-			margin-top: 3rem;
-			h1 {
-				@include fontStyle(4rem, 700, "");
-			}
-			p {
-				@include fontStyle(2rem, 500, "");
-				width: 55%;
-				font-style: oblique;
-				text-align: center;
-				padding: 5rem 0 0 1rem;
-			}
-		}
 		position: relative;
 		.row {
 			width: 90%;
@@ -593,6 +578,23 @@ $WorkSans: "Work Sans", sans-serif;
 					left: 0;
 					margin: 0;
 				}
+			}
+		}
+	}
+	.grid {
+		@include flex(column, 0, center, center);
+		.galleryHeading {
+			@include flex(column, 0, center, center);
+			width: 100%;
+			margin-top: 2rem;
+			h1 {
+				@include fontStyle(2rem, 600, "");
+			}
+			p {
+				@include fontStyle(1rem, 500, "");
+				width: 90%;
+				padding: 0;
+				text-align: center;
 			}
 		}
 	}
