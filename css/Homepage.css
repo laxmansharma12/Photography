@@ -133,6 +133,9 @@
 .Wrapper .grid {
   position: relative;
 }
+.Wrapper .grid .galleryHeading p {
+  color: #5b5656;
+}
 .Wrapper .grid .row {
   width: 90%;
   height: 90%;
@@ -172,6 +175,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   line-height: "";
+  color: #5b5656;
   width: 40%;
   font-style: oblique;
   text-align: center;
