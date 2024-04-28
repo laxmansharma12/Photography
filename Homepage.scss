@@ -422,6 +422,7 @@ $WorkSans: "Work Sans", sans-serif;
 @media (max-width: 640px) {
 	.Wrapper {
 		#HeroSection {
+			height: 95vh;
 			.carousel {
 				.carousel-control-prev,
 				.carousel-control-next {
@@ -450,7 +451,7 @@ $WorkSans: "Work Sans", sans-serif;
 				@include fontStyle(1rem, "", "");
 			}
 			.custom-prev {
-				bottom: 0.5rem;
+				bottom: 1rem;
 				left: 10%;
 			}
 			.custom-next {

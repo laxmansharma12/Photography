@@ -505,6 +505,9 @@
 }
 
 @media (max-width: 640px) {
+  .Wrapper #HeroSection {
+    height: 95vh;
+  }
   .Wrapper #HeroSection .carousel .carousel-control-prev,
   .Wrapper #HeroSection .carousel .carousel-control-next {
     width: 20%;
@@ -536,7 +539,7 @@
     line-height: "";
   }
   .Wrapper #HeroSection .custom-prev {
-    bottom: 0.5rem;
+    bottom: 1rem;
     left: 10%;
   }
   .Wrapper #HeroSection .custom-next {
